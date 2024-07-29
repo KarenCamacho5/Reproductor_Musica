@@ -1,0 +1,421 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* DEFINIMOS VARIABLES DE MARCA */
+:root{
+    --color-primario: #6644B8;
+    --color-secundario: #bb00bd;
+    --color-fondoA : #0e159a;
+    --color-fondoB : #0c055b;
+}
+
+/* ESTILOS PAGINA DE INICIO */
+#cont-inicio{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url("../img/fondo2.jpg") var(--color-fondoA);
+    text-align: center;
+    padding-top: 415px;
+}
+
+#cont-inicio p{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+
+.btn-secundario{
+    padding: 14px 40px;
+    background: var(--color-fondoB);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    max-width: 90%;
+    margin: 20px auto 0;
+    text-decoration: none;
+}
+/* ESTILOS REGISTRO */
+
+#cont-registro {
+    position: absolute;
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative; /* Asegura que el position:relative esté presente para los elementos posicionados absolutamente */
+    background-image: url('../img/fondo2.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-position: center; /* Centra la imagen */
+    text-align: center;
+    padding-top: 200px; /* Espacio superior */
+}
+
+#cont-home{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-image: url('../img/fondo2.jpg');
+    position: relative;
+}
+
+#cont-registro img{
+    position: relative;
+    top: 300px;
+    height: 120px;
+    border-radius: 50px;
+}
+
+#cont-registro p{
+    position: relative;
+    top: 335px;
+    color: #fff;
+    font-size: 22px;
+    padding: 0 70px;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../img/fondo3.jpg); /* Imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-position: center; /* Centra la imagen */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    overflow-y: scroll !important;
+}
+
+.music-player {
+    bottom: -43px;
+    width: 320px;
+    position: relative;
+    height: 414px;
+  }
+
+.iconos-top {
+    position: relative;
+    bottom: 103px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-size: 25px;
+    width: 320px;
+}
+
+.nombre-album {
+    position: relative;
+    bottom: 61px;
+    text-align: center;
+}
+
+.album-art {
+    position: relative;
+}
+
+.album-art img {
+    position: relative;
+    bottom: 80px;
+    width: 100%;
+    border-radius: 15px;
+    height: 410px;
+  }
+
+.overlay-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.album-art:hover .overlay-info {
+    opacity: 1;
+}
+
+.song-title {
+    font-size: 1.2em;
+    color: #edf2f4;
+}
+
+.nombre-cancion{
+    position: relative;
+    bottom: 0px;
+    text-align: left;
+    width: 330px;
+    margin-bottom: 10px;
+}
+
+.artist-name {
+    font-size: 0.9em;
+    color: #8d99ae;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+    width: 330px;
+  }
+
+.current-time, .total-time {
+    font-size: 0.8em;
+    color: #8d99ae;
+}
+
+.progress-bar {
+    background-color: #8d99ae;
+    border-radius: 10px;
+    flex: 1;
+    height: 5px;
+    margin: 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 3%, rgba(131,58,180,1) 20%, rgba(131,58,180,1) 34%, rgba(253,29,29,1) 57%, rgba(252,176,69,1) 99%);
+    height: 100%;
+    position: absolute;
+    left: 0; 
+    top: 0;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5em;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.controls i {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.controls i:hover {
+    color: #ff6f61;
+    color:linear-gradient(to bottom, #511be6ed, #814dccbd, #650ee3c7, #8907f2); /* Color de hover para los íconos */
+    /* Color de hover para los íconos */
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+.play-pause {
+    background-image: linear-gradient(to bottom, #511be6ed, #814dccbd, #650ee3c7, #8907f2);
+    border-radius: 50%;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+
+.play-pause:hover {
+    background-image: linear-gradient(to bottom, #4507c4, #6b2b9e, #5e04c3, #7410e8);
+}
+
+.play-pause i {
+    margin: 0;
+    font-size: 1.5em; /* Ajusta el tamaño del ícono dentro del botón */
+}.iconos-abajo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.iconos-abajo i {
+    color: #8d99ae;
+    font-size: 1.8em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.iconos-abajo i:hover {
+    color: #ff6f61; /* Color de hover para los íconos */
+    transform: scale(1.2); /* Efecto de zoom al pasar el ratón */
+}
+
+.iconos-abajo i:not(:last-child) {
+    margin-right: 20px; /* Espacio entre íconos */
+}
+
+.iconos-abajo i:last-child {
+    margin-right: 0; /* El último ícono no necesita margen derecho */
+}
+
+.iconos-abajo i.fas.fa-shuffle {
+    color: #4caf50; /* Color específico para el ícono de shuffle */
+}
+
+.iconos-abajo i.fas.fa-ellipsis-h {
+    color: #ff9800; /* Color específico para el ícono de elipsis */
+}
+
+
+/* Lista de reproducciones*/
+
+
+.Lista1 h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.titulo{
+    position: relative;
+    bottom: 30px;
+}
+.Lista1{
+    position: absolute;
+    display: none;  
+    width: 100%;
+    transition: 5s ease all;
+    z-index: 20; 
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 25px;
+    background-image: url(../img/fondo3.jpg); /* Imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-position: center; /* Centra la imagen */
+    text-align: center;
+    overflow: scroll !important;
+}
+
+.Lista1.active {
+    display: block;
+    left: 0px;
+    top: 0px;
+    overflow: scroll;
+    
+}
+
+
+.icono{
+    position: relative;
+    font-size: 100px !important;
+    color: #fff;
+    right: 170px;
+    top: 38px;
+
+}
+.icono1{
+    position: relative;
+    color: #fff;
+    left: 165px;
+    bottom: 41px;
+
+}
+
+.cont-rock{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cont-rock h2{
+    color: #fff;
+    font-weight: 400;
+    font-size: 33px;
+    position: relative;
+    right: 143px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.cont-rock hr{
+    width: 140px;
+    border: 2px solid var(--color-primario);
+    margin: 4px 0 20px;
+}
+.cont-caratulas {
+    display: flex ;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+}
+.caratula{
+    background:transparent;
+    border: transparent;
+    border-radius: 20px 0 20px 0 ;
+    width: 170px;
+    padding: 2px ;
+    margin-right: 10px;
+}
+.caratula img{
+    width: 160px;
+    height: 191px;
+    border-radius: 20px 0 20px 0 ;
+}
+
+.caratula p{
+    color: #fff;
+}
+
+.caratula1{
+    display: flex;
+    width: 173px;
+    height: 50px;
+    align-content: stretch;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #f566fe;
+    background: #3c2654a1;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.imagen_caratula{
+    width: 30px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.nombre1{
+    padding-left: 8px;
+    padding-top: 10px;
+    height: auto;
+    font-size: 14px;
+}
+
+.container h2{
+    color: #fff;
+    font-weight: 400;
+    font-size: 19px;
+    position: relative;
+    right: 122px;
+    font-family: "Bebas Neue", sans-serif;
+}
+

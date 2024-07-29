@@ -1,0 +1,187 @@
+/* SETEAR ESTILOS POR DEFECTO */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* DEFINIMOS VARIABLES DE MARCA */
+:root{
+    --color-primario: #6644B8;
+    --color-secundario: #bb00bd;
+    --color-fondoA : #0e159a;
+    --color-fondoB : #0c055b;
+}
+
+/* ESTILOS PAGINA DE INICIO */
+#cont-inicio{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url("../img/fondo2.jpg") var(--color-fondoA);
+    text-align: center;
+    padding-top: 415px;
+}
+
+#cont-inicio p{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+
+.btn-secundario{
+    padding: 14px 40px;
+    background: var(--color-fondoB);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    max-width: 90%;
+    margin: 20px auto 0;
+    text-decoration: none;
+}
+/* ESTILOS REGISTRO */
+
+#cont-registro {
+    position: absolute;
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative; /* Asegura que el position:relative esté presente para los elementos posicionados absolutamente */
+    background-image: url('../img/fondo2.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-position: center; /* Centra la imagen */
+    text-align: center;
+    padding-top: 200px; /* Espacio superior */
+}
+
+#cont-home{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-image: url('../img/fondo2.jpg');
+    position: relative;
+}
+
+#cont-registro img{
+    position: relative;
+    top: 300px;
+    height: 120px;
+    border-radius: 50px;
+}
+
+#cont-registro p{
+    position: relative;
+    top: 335px;
+    color: #fff;
+    font-size: 22px;
+    padding: 0 70px;
+}
+
+
+/* Lista de reproducciones*/
+
+
+.Lista1 h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.titulo{
+    position: relative;
+    bottom: 30px;
+}
+.Lista1{
+    position: fixed;
+    display: none;  
+    width: 100%;
+    transition: 5s ease all;
+    z-index: 20; 
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 25px;
+    background-image: url(../img/fondo3.jpg); /* Imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-position: center; /* Centra la imagen */
+    text-align: center;
+}
+
+.listaDeCanciones.active {
+    display: block;
+    left: 0;
+    
+}
+
+
+.icono{
+    position: relative;
+    font-size: 100px !important;
+    color: #fff;
+    right: 170px;
+    top: 38px;
+
+}
+.icono1{
+    position: relative;
+    color: #fff;
+    left: 165px;
+    bottom: 41px;
+
+}
+
+.cont-rock{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cont-rock h2{
+    color: #fff;
+    font-weight: 400;
+    font-size: 33px;
+    position: relative;
+    right: 143px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.cont-rock hr{
+    width: 140px;
+    border: 2px solid var(--color-primario);
+    margin: 4px 0 20px;
+}
+.cont-caratulas {
+    display: flex ;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+}
+.caratula{
+    background:transparent;
+    border: transparent;
+    border-radius: 20px 0 20px 0 ;
+    width: 170px;
+    padding: 2px ;
+    margin-right: 10px;
+}
+.caratula img{
+    width: 160px;
+    height: 191px;
+    border-radius: 20px 0 20px 0 ;
+}
+
+.caratula p{
+    color: #fff;
+}
+
+
+
+
+
+
